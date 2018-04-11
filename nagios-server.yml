@@ -2,8 +2,14 @@
 - name: Playbook for configuring nagios server
   hosts: all
   
-  tasks:
   
+  proxy_env:
+    http_proxy: http://web-proxy.in.hpecorp.net:8080
+    https_proxy: https://web-proxy.in.hpecorp.net:8080
+  
+  
+  tasks:  
+   
   - name: download binaries to server
     get_url: 
       url: http://github.com/baba-dude/Nagios/blob/master/xi-5.4.11.tar.gz
