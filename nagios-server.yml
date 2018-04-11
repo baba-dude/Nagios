@@ -4,15 +4,15 @@
   
   tasks:
   
-  #- name: download binaries to server
-  #  get_url: 
-   #   url: http://github.hpe.com/baba-dudekula/Nagios-Config/blob/master/xi-5.4.11.tar.gz
-    #  dest: /tmp/
-     # mode: 0756
+  - name: download binaries to server
+    get_url: 
+      url: https://github.com/baba-dude/Nagios/blob/master/xi-5.4.11.tar.gz
+      dest: /tmp/
+      mode: 0755
       
       
-  - name: download file
-    shell: wget "http://github.hpe.com/baba-dudekula/Nagios-Config/blob/master/xi-5.4.11.tar.gz"
+  #- name: download file
+   # shell: wget "https://github.com/baba-dude/Nagios/blob/master/xi-5.4.11.tar.gz"
 
       
   - name: Extract xi-5.4.11.tar.gz to remote host /tmp directory.
