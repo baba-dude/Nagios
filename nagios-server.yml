@@ -6,13 +6,13 @@
   
   - name: download binaries to server
     get_url: 
-      url: https://github.com/baba-dude/Nagios/blob/master/xi-5.4.11.tar.gz
+      url: http://github.com/baba-dude/Nagios/blob/master/xi-5.4.11.tar.gz
       dest: /tmp/
       mode: 0755
       
       
   #- name: download file
-   # shell: wget "https://github.com/baba-dude/Nagios/blob/master/xi-5.4.11.tar.gz"
+   # shell: wget "http://github.com/baba-dude/Nagios/blob/master/xi-5.4.11.tar.gz"
 
       
   - name: Extract xi-5.4.11.tar.gz to remote host /tmp directory.
